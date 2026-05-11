@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view>{{info}}</view>
+<image src="{{imgSrc}}" mode="widthFix" />
+<view>{{randomNum1 >=5 ? '随机数大于或等于5':'随机数小于5'}}</view>
+<view>{{randomNum2 * 100}}</view>

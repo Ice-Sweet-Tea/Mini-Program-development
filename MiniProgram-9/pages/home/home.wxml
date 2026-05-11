@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<van-button type="primary" bind:tap="getInfo">按钮</van-button>
+<van-button type="danger">按钮</van-button>
+

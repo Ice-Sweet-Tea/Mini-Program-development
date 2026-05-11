@@ -1,0 +1,16 @@
+<!--pages/list/list.wxml-->
+<!-- 轮播图区域 -->
+<swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="purple" autoplay interval="3000" circular>
+  <!-- 第1项 -->
+  <swiper-item>
+    <view class="item">A</view>
+  </swiper-item>
+  <!-- 第2项 -->
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+  <!-- 第3项 -->
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper>

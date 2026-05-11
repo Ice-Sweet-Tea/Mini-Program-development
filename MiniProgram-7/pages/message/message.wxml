@@ -1,0 +1,18 @@
+<!--pages/message/message.wxml-->
+<text>pages/message/message.wxml</text>
+<view>count的值是{{count}}</view>
+<button bind:tap="addCount">+1</button>
+
+<view>{{m1.toUpper(username)}}</view>
+<view>{{m2.toLower(country)}}</view>
+
+<!-- 外联脚本 -->
+<wxs src="/utils/tools.wxs" module="m2"></wxs>
+
+
+<!-- 内嵌脚本 -->
+<wxs module="m1">
+  module.exports.toUpper = function(str){
+    return str.toUpperCase()
+  }
+</wxs>

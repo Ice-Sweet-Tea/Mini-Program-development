@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<!-- <text class="g-red-text">pages/home/home.wxml</text>
+
+<view></view> -->
+<!-- 指定默认值覆盖原默认值 -->
+<!-- <my-test1 max="9"></my-test1> -->
+
+<!-- <my-test2></my-test2> -->
+
+<!-- <my-test3></my-test3> -->
+
+<!-- <my-test4>
+  <view slot="before">这里是插入到组件slot name="before"中的内容</view>
+  <view slot="after">这里是插入到组件slot name="after"中的内容</view>
+</my-test4> -->
+
+<!-- 通过自定义事件的形式，将子组件传递给父组件 -->
+<my-test5 count="{{count}}" bind:sync="syncCount" class="customA" id="cA"></my-test5>
+<view>~~~~~~~~~~</view>
+<view>父组件中，count值是：{{count}}</view>
+<button bindtap="getChild">获取子组件的实例对象</button>

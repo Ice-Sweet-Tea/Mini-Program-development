@@ -1,0 +1,17 @@
+<!--pages/list/list.wxml-->
+<!-- <view>相当于网页的<div> -->
+
+<!-- <view class="container1">
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</view> -->
+
+<!-- scroll-y 属性：允许纵向滚动 -->
+<!-- scroll-x 属性：允许横向滚动 -->
+<!-- 注意：使用竖向滚动时，必须给scroll-view 一个固定的高度 -->
+<scroll-view class="container1" scroll-y="true">
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+  </scroll-view>

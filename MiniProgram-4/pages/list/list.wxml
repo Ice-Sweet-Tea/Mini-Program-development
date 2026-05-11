@@ -1,0 +1,20 @@
+<!-- pages/list/list.wxml -->
+<!-- 按钮组件的基本使用 -->
+<!-- 1. 基本 type 属性 -->
+<button>普通按钮</button>
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button>
+
+<!-- 2. size="mini" 小尺寸按钮 -->
+<button size="mini">小号普通按钮</button>
+<button type="primary" size="mini">小号主色调按钮</button>
+<button type="warn" size="mini">小号警告按钮</button>
+
+<!-- 3. plain 镂空按钮 -->
+<button size="mini" plain>镂空小号普通按钮</button>
+<button type="primary" size="mini" plain>镂空小号主色调按钮</button>
+<button type="warn" size="mini" plain>镂空小号警告按钮</button>
+
+<!-- image图片组件 -->
+<image />
+<image src="/images/jinzhien.png" mode="widthFix"/>

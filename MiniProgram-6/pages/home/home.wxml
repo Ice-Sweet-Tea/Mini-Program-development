@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<button bind:tap="getInfo">发起GET请求</button>
+
+<button bind:tap="postInfo">发起GET请求</button>
+
+<!-- 声明式导航 -->
+<navigator url="/pages/message/message" open-type="switchTab">导航到消息页面</navigator>
+<navigator url="/pages/info/info" open-type="navigate">导航到info页面</navigator>
+<!-- 编程式导航 -->
+<button bind:tap="gotoMessage">跳转到message页面</button>
+<button bind:tap="gotoInfo">跳转到info页面</button>
+<!-- 导航传参 -->
+<navigator url="/pages/info/info?name=zs&age=20" >跳转到info页面</navigator>
+<button bind:tap="gotoInfo2">跳转到info页面</button>
+

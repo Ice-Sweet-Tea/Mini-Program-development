@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<!-- <button type="primary" bindtap="btnTapHandler">按钮</button>
+<button type="primary" bind:tap="CountChange">+1</button> -->
+
+<!-- 事件传参使用自定义属性 -->
+<!-- <button type="primary" bind:tap="btnTap2" data-info="{{2}}">+2</button>
+<input value="{{msg}}" bindinput="inputHandler" /> -->
+
+<!-- 条件渲染 -->
+<!-- <view wx:if="{{type===1}}">男</view>
+<view wx:elif="{{type===2}}">女</view>
+<view wx:else>保密</view> -->
+
+<!-- 一次性控制多个组件的展示与隐藏 -->
+<block wx:if="{{true}}">
+  <view>view1</view>
+  <view>view2</view>
+</block>
+
+<!-- hidden 控制元素的显示和隐藏 -->
+<view hidden="{{condition}}">条件为 true 隐藏，条件为 false 显示</view>
+
+<!-- 列表渲染 -->
+<view wx:for="{{arr1}}" wx:key="index">
+  索引是：{{index}}，item项是：{{item}}
+</view>
+<view>~~~~~~~~</view>
+
+<!-- 手动指定索引和当前项的变量名(了解) -->
+<!-- 使用 wx:for-index可以指定当前循环项的索引的变量名 -->
+<!-- 使用 wx:for-item可以指定当前项的变量名 -->
+<view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+  索引是：{{idx}}，item项是：{{itemName}}
+</view>
+<view>~~~~~~~~</view>
+
+<!-- wx:key的使用 -->
+<view wx:for="{{userList}}" wx:key="id" class="username">
+  {{item.id}}---{{item.name}}
+</view>
